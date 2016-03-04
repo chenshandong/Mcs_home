@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageButton
+            android:id="@+id/btn_kgpower"
+            android:layout_width="100dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_style_typower"
+            android:layout_marginLeft="218dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true" />
+
+        <ImageButton
+            android:id="@+id/btn_kgmode"
+            android:layout_width="100dp"
+            android:layout_height="75dp"
+            android:background="@drawable/btn_style_ktyy"
+            android:layout_alignTop="@+id/btn_kgpower"
+            android:layout_toRightOf="@+id/btn_kgpower"
+            android:layout_marginLeft="72dp" />
+
+        <RelativeLayout
+            android:layout_width="310dp"
+            android:layout_height="140dp"
+            android:layout_below="@+id/btn_kgpower"
+            android:layout_marginRight="90dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="70dp"
+            android:background="@mipmap/air_show_temp_bg"
+            android:id="@+id/relativeLayout2">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center"
+                    android:layout_weight="1.1">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="当前温度："
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:id="@+id/textView15" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Temperature:"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:id="@+id/textView16"
+                        android:layout_below="@+id/textView15"
+                        android:layout_alignParentLeft="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_show_tempeture"
+                        android:textSize="60sp"
+                        android:text="22°"
+                        android:visibility="invisible"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="34dp"
+                    android:gravity="left"
+                    android:layout_weight="1.2">
+
+                    <ImageView
+                        android:id="@+id/view_fs1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/fs1"
+                        android:layout_marginRight="6dp"
+                        android:layout_centerVertical="true"
+                        android:visibility="invisible"
+                        android:layout_toLeftOf="@+id/view_fs2" />
+
+                    <ImageView
+                        android:id="@+id/view_fs2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/fs2"
+                        android:visibility="invisible"
+                        android:layout_alignBottom="@+id/view_fs3"
+                        android:layout_centerHorizontal="true" />
+
+                    <ImageView
+                        android:id="@+id/view_fs3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/fs3"
+                        android:visibility="invisible"
+                        android:layout_alignBottom="@+id/view_fs1"
+                        android:layout_toRightOf="@+id/view_fs2"
+                        android:layout_marginLeft="6dp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="温度控制："
+            android:textSize="13sp"
+            android:textColor="@color/white"
+            android:id="@+id/textView17"
+            android:layout_marginTop="24dp"
+            android:layout_below="@+id/relativeLayout2"
+            android:layout_alignLeft="@+id/relativeLayout2"
+             />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/textView18"
+            android:background="@color/gray"
+            android:layout_below="@+id/btn_kgpower"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Temperature:"
+            android:textSize="13sp"
+            android:id="@+id/textView19"
+            android:textColor="@color/white"
+            android:layout_below="@+id/textView17"
+            android:layout_alignLeft="@+id/textView17" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tempdown"
+            android:background="@drawable/air_down_selector"
+            android:layout_alignTop="@+id/textView17"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/textView19" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tempup"
+            android:background="@drawable/air_up_selector"
+            android:layout_alignTop="@+id/tempdown"
+            android:layout_toLeftOf="@+id/btn_kgmode" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="风速："
+            android:textColor="@color/white"
+            android:id="@+id/textView20"
+            android:layout_alignTop="@+id/relativeLayout2"
+            android:layout_alignLeft="@+id/btn_kgmode"
+            android:layout_marginLeft="46dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Speed："
+            android:textColor="@color/white"
+            android:id="@+id/textView21"
+            android:layout_below="@+id/textView20"
+            android:layout_alignLeft="@+id/textView20" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView21"
+            android:layout_alignLeft="@+id/textView21"
+            android:layout_marginTop="10dp"
+            android:id="@+id/radioGroup">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:id="@+id/btn_kgwf"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/radio_weifeng_selector"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_kgzf"
+                android:button="@null"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/radio_zhongfeng_selector"
+                />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_kgdf"
+                android:button="@null"
+                android:background="@drawable/radio_dafeng_selector"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="模式："
+            android:textColor="@color/white"
+            android:id="@+id/textView22"
+            android:layout_marginLeft="41dp"
+            android:layout_above="@+id/textView21"
+            android:layout_toRightOf="@+id/radioGroup" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="mode："
+            android:textColor="@color/white"
+            android:id="@+id/textView23"
+            android:layout_below="@+id/textView22"
+            android:layout_alignLeft="@+id/textView22" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mode_radioGroup"
+            android:layout_alignTop="@+id/radioGroup"
+            android:layout_alignLeft="@+id/textView23">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgBtn_zl"
+                android:button="@null"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/radio_zhileng_selector"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radio_zhire_selector"
+                android:layout_marginBottom="10dp"
+                android:button="@null"
+                android:id="@+id/imgBtn_zr" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:background="@drawable/radio_songfeng_selector"
+                android:id="@+id/imgBtn_sf" />
+        </RadioGroup>
+
+    </RelativeLayout>
+
+</LinearLayout>

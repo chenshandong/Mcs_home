@@ -1,0 +1,68 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TabTV" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background" >
+
+        <ImageButton
+            android:id="@+id/btn_tvsource"
+            android:layout_width="100dp"
+            android:layout_height="72dp"
+            android:layout_alignTop="@+id/btn_tvpower"
+            android:layout_marginLeft="63dp"
+            android:layout_toRightOf="@+id/btn_tvpower"
+            android:background="@drawable/btn_style_src" />
+
+        <ImageButton
+            android:id="@+id/btn_tvmenu"
+            android:layout_width="100dp"
+            android:layout_height="72dp"
+            android:layout_alignTop="@+id/btn_tvsource"
+            android:layout_marginLeft="63dp"
+            android:layout_toRightOf="@+id/btn_tvsource"
+            android:background="@drawable/btn_menu_off" />
+
+        <ImageButton
+            android:id="@+id/btn_tvmode"
+            android:layout_width="100dp"
+            android:layout_height="72dp"
+            android:layout_alignTop="@+id/btn_tvmenu"
+            android:layout_marginLeft="63dp"
+            android:layout_toRightOf="@+id/btn_tvmenu"
+            android:background="@drawable/btn_style_tymode" />
+
+        <ImageButton
+            android:id="@+id/btn_tvpower"
+            android:layout_width="100dp"
+            android:layout_height="72dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="93dp"
+            android:layout_marginTop="33dp"
+            android:background="@drawable/btn_style_typower" />
+
+        <FrameLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="650dp"
+            android:layout_height="300dp"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="133dp" >
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/txt_tvname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/relativeLayout1"
+            android:layout_marginLeft="51dp"
+            android:layout_toRightOf="@+id/relativeLayout1"
+            android:text="" />
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,55 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".TabSound" >
+
+    <RelativeLayout
+        android:id="@+id/rl_sound"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageButton
+            android:id="@+id/btn_soundmode"
+            android:layout_width="100dp"
+            android:layout_height="75dp"
+            android:background="@drawable/btn_style_tymode"
+            android:layout_alignTop="@+id/closeWindow"
+            android:layout_toLeftOf="@+id/closeWindow"
+            android:layout_toStartOf="@+id/closeWindow"
+            android:layout_marginRight="69dp"
+            android:layout_marginEnd="69dp" />
+
+        <ImageButton
+            android:id="@+id/btn_soundpower"
+            android:layout_width="100dp"
+            android:layout_height="75dp"
+            android:background="@drawable/btn_style_typower"
+            android:layout_marginLeft="78dp"
+            android:layout_marginStart="78dp"
+            android:layout_alignTop="@+id/closeWindow"
+            android:layout_toRightOf="@+id/closeWindow"
+            android:layout_toEndOf="@+id/closeWindow" />
+
+        <RelativeLayout
+            android:id="@+id/closeWindow"
+            android:layout_width="250dp"
+            android:layout_height="220dp"
+            android:layout_gravity="center"
+            android:background="@drawable/imgview_kedu"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
+
+            <com.anupcowkur.wheelmenu.WheelMenu
+                android:id="@+id/wheelMenu"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="25dp"/>
+
+            
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>

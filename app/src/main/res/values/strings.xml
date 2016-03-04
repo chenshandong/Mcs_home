@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">会议中控</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_start">会议中控</string>
+    <string name="title_activity_set">SetActivity</string>
+    <string name="set_title">房间设置</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="situation_sheet">情景切换模式</string>
+    <string name="curtain_sheet">窗帘控制模式</string>
+    <string name="projector_sheet">投影控制模式</string>
+    <string name="air_sheet">空调控制模式</string>
+    <string name="tv_sheet">电视控制模式</string>
+    <string name="sound_sheet">音响控制模式</string>
+    <string name="music_sheet">音乐控制模式</string>
+    <string name="tong_sheet">同屏控制模式</string>
+</resources>
